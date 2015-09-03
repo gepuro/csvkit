@@ -203,7 +203,8 @@ class Table(list):
             contents = f.read()
         except UnicodeDecodeError:
             if f == sys.stdin:
-                contents = open(sys.stdin.fileno(), 'r', encoding='utf8').read()
+                f = open(sys.stdin.fileno(), 'r', encoding='utf8')
+                contents = f.read()
             else:
                 raise
 
