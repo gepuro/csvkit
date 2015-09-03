@@ -5,7 +5,7 @@ import datetime
 import itertools
 
 import six
-
+import sys
 from csvkit import CSVKitReader, CSVKitWriter
 from csvkit import sniffer
 from csvkit import typeinference
