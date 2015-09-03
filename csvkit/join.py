@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 def _get_ordered_keys(rows, column_index):
     """

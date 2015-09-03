@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 """
 This module contains unicode aware replacements for :func:`csv.reader` and :func:`csv.writer`. The implementations are largely copied from `examples in the csv module documentation <http://docs.python.org/library/csv.html#examples>`_.

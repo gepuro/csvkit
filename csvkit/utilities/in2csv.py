@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 from csvkit import convert
 from csvkit.cli import CSVKitUtility

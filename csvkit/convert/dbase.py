@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 """
 Note: dbf is only supported/imported for Python 2.

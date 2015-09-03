@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 """
 csvcut is originally the work of eminent hackers Joe Germuska and Aaron Bycoffe.
