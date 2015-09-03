@@ -207,7 +207,6 @@ class Table(list):
                 contents = f.read()
             else:
                 raise
-        print(contents)
         # snifflimit == 0 means do not sniff
         if snifflimit is None:
             kwargs['dialect'] = sniffer.sniff_dialect(contents)
