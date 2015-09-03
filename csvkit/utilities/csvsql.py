@@ -59,7 +59,7 @@ class CSVSQL(CSVKitUtility):
         if sys.stdin not in self.input_files:
             try:
                 if not sys.stdin.isatty():
-                    self.input_files.insert(0, oepn("/dev/stdin", "r", encoding="utf-8")))
+                    self.input_files.insert(0, oepn("/dev/stdin", "r", encoding="utf-8"))
             except:
                 pass
 
