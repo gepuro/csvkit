@@ -199,7 +199,13 @@ class Table(list):
         """
         # This bit of nonsense is to deal with "files" from stdin,
         # which are not seekable and thus must be buffered
-        contents = f.read()
+        try:
+            contents = f.read()
+        except UnicodeDecodeError:
+            if f == sys.stdin:
+                contents = open(sys.stdin.fileno(), 'r', encoding='utf8').read()
+            else:
+                raise
 
         # snifflimit == 0 means do not sniff
         if snifflimit is None:
